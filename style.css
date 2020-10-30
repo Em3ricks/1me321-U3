@@ -1,0 +1,423 @@
+/*
+Kod skriven av John Emericks
+Linnéuniversitet, HT 2020
+*/
+
+/*--------------------
+Struktur:
+1 | Basinställningar
+2 | Header
+3 | Hero Section
+4 | Main content Section
+5 | Gallery Section
+6 | Footer
+7 | Services
+8 | Contact
+9 | About
+--------------------*/
+
+/*----- 1 | Basinställningar -----*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',
+        sans-serif;
+}
+
+body {
+    background-color: #fefefe;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-weight: 300;
+    font-size: 13px;
+    padding: 0;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+}
+
+a {
+    text-decoration-line: none;
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: rgb(97, 171, 255);
+    -webkit-transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+}
+
+.active {
+    color: rgb(0, 119, 255);
+}
+
+
+/*----- 2 | Header -----*/
+header {
+    padding-bottom: 5em;
+}
+
+nav {
+    background-color: rgb(0, 119, 255);
+}
+
+.navigation {
+    display: flex;
+    padding: 2em;
+    float: right;
+}
+
+.navigation li {
+    margin-right: 2em;
+    font-size: 14pt;
+}
+
+.logo-wrapper {
+    width: 30%;
+    float: left;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    padding: 1em;
+}
+
+
+.header-social-list {
+    display: flex;
+
+}
+
+.header-social a {
+    color: #ececec;
+}
+
+.header-social-list li {
+    padding: 10px;
+
+}
+
+.facebook {
+    position: absolute;
+    right: 25px;
+    width: 40px;
+}
+
+.symbol {
+    width: 25px;
+}
+
+/*----- 3 | Hero Section -----*/
+
+.hero {
+    position: relative;
+    text-align: center;
+
+}
+
+.hero-bg {
+    width: 100%;
+    opacity: .3;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.hero-text h1 {
+    font-size: 32pt;
+    margin-bottom: 15px;
+
+}
+
+.hero-text h3 {
+    font-size: 18pt;
+    color: rgb(0, 119, 255);
+}
+
+/*----- 4 | Main content Section -----*/
+
+.title h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em;
+    color: rgb(0, 119, 255);
+    background-color: aliceblue;
+    margin-top: -5px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    padding: 3em 0 3em 0;
+}
+
+.main-image {
+    width: 85%;
+    margin: 2em;
+}
+
+.main-text {
+    width: 80%;
+    margin: 2em;
+    text-align: center;
+}
+
+.main-text h3 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.main-text ul {
+    margin: 10px 0 10px 0;
+}
+
+@media screen and (max-width: 900px) {
+    .main-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+/*----- 5 | Gallery Section -----*/
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-column-gap: 10px;
+    grid-auto-rows: 210px;
+    padding: 1em;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/*----- 6 | Footer -----*/
+footer {
+    background-color: rgb(0, 119, 255);
+    font-family: "Lato", sans-serif;
+    padding: 85px 0 285px 0;
+}
+
+.footer-inner {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+    max-width: 1170px;
+    position: relative;
+}
+
+.footer-item {
+    float: left;
+    margin: 0 7.2% 0 0;
+}
+
+
+.footer-inner:after {
+    content: "© 2020 Schakt & Bygganläggning AB";
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    font-size: 13px;
+    color: #d1d1d1;
+    position: absolute;
+    top: 260px;
+    clear: both;
+    display: block;
+}
+
+/*----- 7 | Services -----*/
+
+.local-navigation {
+    display: inline-flex;
+    width: 100%;
+    background-color: rgb(0, 119, 255);
+    padding: 1em 0 1em 0;
+    margin-top: -5px;
+}
+
+.local-navigation li {
+    width: 20%;
+    text-align: center;
+}
+
+.local-navigation a {
+    color: #fefefe;
+}
+
+.local-navigation a:hover {
+    text-decoration: underline;
+}
+
+.service-item h3 {
+    margin-bottom: 10px;
+}
+
+.service-image {
+    width: 90%;
+    height: 400px;
+    object-fit: cover;
+    padding: 1em;
+}
+
+@media screen and (max-width: 900px) {
+    .service-image {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .local-navigation li {
+        font-size: 8pt;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .local-navigation li {
+        font-size: 6pt;
+    }
+}
+
+
+/*----- 8 | Contact -----*/
+.contact-container {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 4em 0 4em 0;
+}
+
+#contact h3 {
+    color: rgb(0, 119, 255);
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 10pt;
+}
+
+fieldset {
+    border: medium none;
+    margin: 0 0 10px;
+    min-width: 100%;
+    width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+    width: 95%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #AAA;
+}
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: rgb(0, 119, 255);
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+    background: rgb(57, 144, 243);
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.map {
+    width: 100%;
+    height: 400px;
+    margin-bottom: -5px;
+}
+
+/*----- 9 | About -----*/
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+}
+
+.team-card {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 6em;
+}
+
+.team-image {
+    width: 90%;
+    height: 400px;
+    object-fit: cover;
+    padding: 1em;
+}
+
+.card-text {
+    margin-top: -6em;
+    color: #ececec;
+}
+
+@media screen and (max-width: 900px) {
+    .team {
+        grid-template-columns: 1fr;
+    }
+
+    .team-image {
+        height: 600px;
+    }
+}

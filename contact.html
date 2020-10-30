@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schakt och Bygganläggning AB</title>
+
+    <!--- Stilmallar -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="media/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="header-social">
+                <ul class="header-social-list">
+                    <li><a href="tel:+4631245677"> <img src="media/phone.png" alt="" class="symbol"> +46 312 456 77</a>
+                    </li>
+                    <li><a href="mailto:info@schaktobyggab.se"> <img src="media/email.png" alt="" class="symbol">
+                            info@schaktobyggab.se</a></li>
+                    <li><a href="https://www.facebook.com/"><img src="media/facebook.png" alt="" class="facebook"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="logo-wrapper">
+                <a href="index.html">
+                    <picture>
+                        <source media="(min-width: 900px)" srcset="media/logo.png" alt="" class="logo">
+                        <source media="(max-width: 900px)" srcset="media/mobile-logo.png">
+                        <img src="media/logo.png" alt="" class="logo">
+                    </picture>
+                </a>
+            </div>
+
+            <ul class="navigation">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="services.html">Tjänster</a></li>
+                <li><a href="about.html">Om Oss</a></li>
+                <li><a href="contact.html" class="active">Kontakt</a></li>
+                <li><a href="media/Projektrapport.pdf">PDF</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero">
+                <img src="media/contact-banner.jpg" alt="picture of an excavator for the hero section" class="hero-bg">
+                <div class="hero-text">
+                    <h1>För frågor eller offert</h1>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <div class="title">
+                <h1>Kontakta Oss</h1>
+            </div>
+
+            <div class="contact-container">
+                <form id="contact-form">
+                    <h4>Skriv till oss här så återkommer vi så fort vi kan!</h4>
+                    <fieldset>
+                        <input placeholder="Ditt Namn" type="text" tabindex="1" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Din Epost" type="email" tabindex="2" required>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Telefonnummer" type="tel" tabindex="3" required>
+                    </fieldset>
+                    <fieldset>
+                        <textarea placeholder="Skriv meddelande här..." tabindex="5" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <button name="submit" type="submit" id="contact-submit">Skicka</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130266.39962977941!2d17.84197289419544!3d59.32606681578912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f763119640bcb%3A0xa80d27d3679d7766!2sStockholm!5e0!3m2!1ssv!2sse!4v1604063658802!5m2!1ssv!2sse"
+            style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="map"></iframe>
+
+        <footer>
+            <nav class="footer-inner">
+                <section class="footer-item">
+                    <h3>Utforska</h3>
+                    <ul>
+                        <li><a href="index.html">Hem</a></li>
+                        <li><a href="services.html">Tjänster</a></li>
+                        <li><a href="about.html">Om oss</a></li>
+                        <li><a href="about.html#team">Team</a></li>
+                    </ul>
+                </section>
+
+                <section class="footer-item">
+                    <h3>Sociala Medier</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                        <li><a href="https://twitter.com/home">Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+                    </ul>
+                </section>
+
+                <section class="footer-item contact">
+                    <h3>Kontakt</h3>
+                    <p><a href="#">info@schaktobyggab.se</a></p>
+                    <p><a href="#">+46 312 456 77</a></p>
+                </section>
+
+            </nav>
+        </footer>
+
+    </main>
+
+
+
+</body>
+
+</html>
